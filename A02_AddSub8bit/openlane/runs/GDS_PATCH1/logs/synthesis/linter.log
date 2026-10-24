@@ -1,0 +1,6 @@
+%Warning-WIDTHEXPAND: /work/design/src/a02_addsub_flags.sv:15:44: Operator ADD expects 9 bits on the RHS, but RHS's VARREF 'op' generates 1 bits.
+                                                                : ... In instance a02_addsub_flags
+   15 |     assign tmp   = {1'b0,a} + {1'b0,b_eff} + op;
+      |                                            ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.009
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.

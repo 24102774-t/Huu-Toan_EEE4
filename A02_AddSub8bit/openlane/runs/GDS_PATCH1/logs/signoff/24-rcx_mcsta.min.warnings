@@ -1,0 +1,5 @@
+Warning: /work/design/runs/GDS_PATCH1/results/routing/a02_addsub_flags.nl.v line 324, module sky130_fd_sc_hd__tapvpwrvgnd_1 not found. Creating black box for TAP_26.
+Warning: /work/design/runs/GDS_PATCH1/results/routing/a02_addsub_flags.nl.v line 397, module sky130_fd_sc_hd__fill_1 not found. Creating black box for FILLER_0_0_3.
+Warning: /work/design/runs/GDS_PATCH1/results/routing/a02_addsub_flags.nl.v line 398, module sky130_fd_sc_hd__fill_2 not found. Creating black box for FILLER_0_0_19.
+Warning: /work/design/runs/GDS_PATCH1/results/routing/a02_addsub_flags.nl.v line 413, module sky130_ef_sc_hd__decap_12 not found. Creating black box for FILLER_0_2_10.
+[WARNING] Did not save OpenROAD database!

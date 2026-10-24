@@ -1,0 +1,131 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/work/design/runs/GDS_PATCH1/tmp/cts/12-a02_addsub_flags.resized.odb'…
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /build/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib
+read_liberty -corner Typical /build/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_liberty -corner Fastest /build/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/work/design/runs/GDS_PATCH1/tmp/cts/12-a02_addsub_flags.resized.sdc'…
+[WARNING STA-0357] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /work/design/runs/GDS_PATCH1/tmp/routing/resizer-routing-design-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal        960           525          45.31%
+met2       Vertical          720           547          24.03%
+met3       Horizontal        480           307          36.04%
+met4       Vertical          288           168          41.67%
+met5       Horizontal         96            25          73.96%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 362
+[INFO GRT-0198] Via related Steiner nodes: 1
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 378
+[INFO GRT-0112] Final usage 3D: 1311
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1               525            65           12.38%             0 /  0 /  0
+met2               547           112           20.48%             0 /  0 /  0
+met3               307             0            0.00%             0 /  0 /  0
+met4               168             0            0.00%             0 /  0 /  0
+met5                25             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             1572           177           11.26%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 2442 um
+[INFO GRT-0014] Routed nets: 105
+[INFO]: Setting RC values...
+[INFO RSZ-0058] Using max wire length 4508um.
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0009] rerouting 4 nets.
+[INFO GRT-0009] rerouting 6 nets.
+[INFO GRT-0001] Minimum degree: 2147483647
+[INFO GRT-0002] Maximum degree: 1
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0009] rerouting 3 nets.
+[INFO GRT-0009] rerouting 4 nets.
+[INFO GRT-0009] rerouting 6 nets.
+[INFO GRT-0001] Minimum degree: 2147483647
+[INFO GRT-0002] Maximum degree: 1
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0001] Minimum degree: 2147483647
+[INFO GRT-0002] Maximum degree: 1
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0009] rerouting 4 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 2
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0001] Minimum degree: 2147483647
+[INFO GRT-0002] Maximum degree: 1
+[INFO GRT-0009] rerouting 1 nets.
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0009] rerouting 4 nets.
+[INFO GRT-0001] Minimum degree: 2147483647
+[INFO GRT-0002] Maximum degree: 1
+[INFO GRT-0009] rerouting 2 nets.
+[INFO GRT-0009] rerouting 3 nets.
+[INFO GRT-0009] rerouting 4 nets.
+[INFO GRT-0009] rerouting 5 nets.
+[INFO GRT-0009] rerouting 5 nets.
+[INFO GRT-0009] rerouting 5 nets.
+[INFO RSZ-0039] Resized 10 instances.
+Placement Analysis
+---------------------------------
+total displacement         31.6 u
+average displacement        0.2 u
+max displacement            6.4 u
+original HPWL            1325.0 u
+legalized HPWL           1411.3 u
+delta HPWL                    7 %
+
+[INFO DPL-0020] Mirrored 44 instances
+[INFO DPL-0021] HPWL before            1411.3 u
+[INFO DPL-0022] HPWL after             1345.1 u
+[INFO DPL-0023] HPWL delta               -4.7 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/work/design/runs/GDS_PATCH1/tmp/13-a02_addsub_flags.odb'…
+Writing netlist to '/work/design/runs/GDS_PATCH1/tmp/13-a02_addsub_flags.nl.v'…
+Writing powered netlist to '/work/design/runs/GDS_PATCH1/tmp/13-a02_addsub_flags.pnl.v'…
+Writing layout to '/work/design/runs/GDS_PATCH1/tmp/13-a02_addsub_flags.def'…
+Writing timing constraints to '/work/design/runs/GDS_PATCH1/tmp/13-a02_addsub_flags.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 566 u^2 43% utilization.
+area_report_end

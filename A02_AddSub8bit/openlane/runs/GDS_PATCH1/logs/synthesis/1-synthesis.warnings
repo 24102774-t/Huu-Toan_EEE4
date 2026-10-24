@@ -1,0 +1,14 @@
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+Warning: Wire a02_addsub_flags.\z is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [7] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [6] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [5] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [4] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [3] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [2] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [1] is used but has no driver.
+Warning: Wire a02_addsub_flags.\y [0] is used but has no driver.
+Warning: Wire a02_addsub_flags.\v is used but has no driver.
+Warning: Wire a02_addsub_flags.\n is used but has no driver.
+Warning: Wire a02_addsub_flags.\c is used but has no driver.
+Warnings: 12 unique messages, 12 total

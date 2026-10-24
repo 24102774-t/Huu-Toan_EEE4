@@ -1,0 +1,10 @@
+# Backup files
+*.bak
+*~
+
+# Temporary editor files
+*.swp
+*.tmp
+
+# OpenLane intermediate files
+/openlane/runs/*/tmp/
